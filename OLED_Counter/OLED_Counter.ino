@@ -40,7 +40,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly
-  showOLEDMessage("Number of seconds is: ", String(counter), "");
+  showOLEDMessage("Num seconds is: ", String(counter), "");
   delay(1000);
   counter = counter+1;
 
