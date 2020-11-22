@@ -28,7 +28,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-  WiFi.mode(WIFI_STA);                    //The WiFi is in station mode. The other is the softAP mode
+  WiFi.mode(WIFI_STA);                    //The WiFi is in station mode
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
