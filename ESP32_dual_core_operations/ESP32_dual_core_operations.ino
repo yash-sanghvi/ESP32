@@ -11,8 +11,10 @@ void print_fibonacci() {
   for (;;) {
     term = term + 1;
     int n3 = n1 + n2;
-    sprintf(print_buf, "Term %d: %d\n", term, n3);
-    Serial.print(print_buf);
+    if(term%5 == 0){
+      sprintf(print_buf, "Term %d: %d\n", term, n3);
+      Serial.println(print_buf);
+    }
     n1 = n2;
     n2 = n3;
 
@@ -26,8 +28,10 @@ void sum_numbers() {
   int sum = 1;
   char print_buf[300];
   for (;;) {
-    sprintf(print_buf, "Term %d: %d\n", n1, sum);
-    Serial.print(print_buf);
+    if(n1 %5 == 0){
+      sprintf(print_buf, "                                                            Term %d: %d\n", n1, sum);
+      Serial.println(print_buf);
+    }
     n1 = n1 + 1;
     sum = sum+n1;
     if (n1 >= 100) break;
@@ -36,17 +40,15 @@ void sum_numbers() {
 
 void codeForTask1( void * parameter ) {
   for (;;) {
-    Serial.print( xPortGetCoreID());
+    Serial.print("Code is running on Core: ");Serial.println( xPortGetCoreID());
     print_fibonacci();
-    delay(1000);
   }
 }
 
 void codeForTask2( void * parameter ) {
   for (;;) {
-    Serial.print( xPortGetCoreID());
+    Serial.print("                                                            Code is running on Core: ");Serial.println( xPortGetCoreID());
     sum_numbers();
-    delay(1000);
   }
 }
 
@@ -65,9 +67,9 @@ void setup() {
                     &TaskHandle,  // Task handle. 
                     TaskCore);    // Core where the task should run 
  */
-  xTaskCreatePinnedToCore(    codeForTask1,    "FibonacciTask",    1000,    NULL,    1,    &Task1,    0);
-  delay(500);  // needed to start-up task1
-  xTaskCreatePinnedToCore(    codeForTask2,    "SumTask",    1000,    NULL,    1,    &Task2,    1);
+  xTaskCreatePinnedToCore(    codeForTask1,    "FibonacciTask",    5000,    NULL,    2,    &Task1,    0);
+  //delay(500);  // needed to start-up task1
+  xTaskCreatePinnedToCore(    codeForTask2,    "SumTask",    5000,    NULL,    2,    &Task2,    1);
 }
 
 void loop() {
