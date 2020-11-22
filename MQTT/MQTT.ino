@@ -1,10 +1,16 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "chetan_2.4g";
-const char* password = "9819085461";
+const char* ssid = "YOUR_SSID";
+const char* password = "YOUR_PASSWORD";
+
+//The broker and port are provided by http://www.mqtt-dashboard.com/
 char *mqttServer = "broker.hivemq.com";
 int mqttPort = 1883;
+
+const char* mqtt_client_name = "ESPYS2111";
+const char* mqtt_pub_topic = "/ys/testpub"; //The topic to which our client will publish
+const char* mqtt_sub_topic = "/ys/testsub"; //The topic to which our client will subscribe
 
 WiFiClient client;
 PubSubClient mqttClient(client);
@@ -38,9 +44,9 @@ void loop() {
   // put your main code here, to run repeatedly:
   if (!mqttClient.connected()){
       while (!mqttClient.connected()){
-        if(mqttClient.connect("ESPYS2111")){
+        if(mqttClient.connect(mqtt_client_name)){
           Serial.println("MQTT Connected!");
-          mqttClient.subscribe("/ys/testsub");
+          mqttClient.subscribe(mqtt_sub_topic);
           }
          else{
           Serial.print(".");
@@ -48,9 +54,9 @@ void loop() {
       }
     }
 
-  mqttClient.publish("/ys/testpub", "TestMsg");
-  mqttClient.loop();
+  mqttClient.publish(mqtt_pub_topic, "TestMsg");
   Serial.println("Message published");
+  mqttClient.loop();
   delay(5000);
 
 }
