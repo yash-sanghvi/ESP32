@@ -16,7 +16,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   <title>Captive Portal Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   </head><body>
-  <h3>Generic IoT Platform</h3>
+  <h3>Captive Portal Demo</h3>
   <br><br>
   <form action="/get">
     <br>
