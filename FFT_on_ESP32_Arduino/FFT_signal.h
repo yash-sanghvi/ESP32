@@ -1,5 +1,5 @@
 #define FFT_N 2048 // Must be a power of 2
-#define TOTAL_TIME (1.173988*8) //The time in which data was captured. This is equal to FFT_N/sampling_freq
+#define TOTAL_TIME 9.391904 //The time in which data was captured. This is equal to FFT_N/sampling_freq
 
 
 float fft_input[FFT_N];
