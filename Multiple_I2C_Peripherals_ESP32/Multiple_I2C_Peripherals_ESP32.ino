@@ -38,8 +38,7 @@ void showOLEDMessage(String line1, String line2, String line3)
 
 void setup() {
   // put your setup code here, to run once:
-  Wire.setClock(100000);
-  Wire.begin(MPU_SDA, MPU_SCL); // sda, scl
+  Wire.begin(MPU_SDA, MPU_SCL, 100000); // sda, scl, freq
   Wire.beginTransmission(MPU_ADDR);
   Wire.write(0x6B);  // PWR_MGMT_1 register
   Wire.write(0);     // set to zero (wakes up the MPU-6050)
