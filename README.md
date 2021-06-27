@@ -9,6 +9,8 @@ This repo contains a series of example codes related to ESP32, almost all of whi
 | :---: | :---:  |
 | AnalogReadWithLDR | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/interfacing_esp32_with_analog_sensors.htm) |
 | Captive_Portal | [Click Here](https://iotespresso.com/create-captive-portal-using-esp32/) |
+| Captive_Portal_LittleFS_HTML | [Click Here](https://iotespresso.com/esp32-captive-portal-fetching-html-using-littlefs/) |
+| Captive_Portal_SPIFFS_HTML | [Click Here](https://iotespresso.com/esp32-captive-portal-fetching-html-from-spiffs/) |
 | Captive_Portal_With_Processor | [Click Here](https://iotespresso.com/display-dynamic-webpages-with-esp32/) |
 | ESP32_dual_core_operations | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/esp32_for_iot_setting_up_rtos_for_dual_core_and_multi_threaded_operation.htm) |
 | FFT_on_ESP32_Arduino | [Click Here](https://medium.com/swlh/how-to-perform-fft-onboard-esp32-and-get-both-frequency-and-amplitude-45ec5712d7da) |
