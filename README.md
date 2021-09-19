@@ -20,6 +20,7 @@ This repo contains a series of example codes related to ESP32, almost all of whi
 | MQTT | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/esp32_for_iot_transmitting_data_over_wifi_using_mqtt.htm) |
 | Multiple_I2C_Peripherals_ESP32 | [Click Here](https://iotespresso.com/multiple-i2c-peripherals-with-esp32/) |
 | OLED_Counter | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/interfacing_oled_display_with_esp32.htm) |
+| Open_CaptivePortal_When_WiFiConnect_Fails | [Click Here](https://iotespresso.com/esp32-launch-captive-portal-only-if-wifi-connect-fails/) |
 | Timer_Interrupts_ESP32 | [Click Here](https://iotespresso.com/timer-interrupts-with-esp32/) |
 
 # Other useful ESP32 Tutorials
