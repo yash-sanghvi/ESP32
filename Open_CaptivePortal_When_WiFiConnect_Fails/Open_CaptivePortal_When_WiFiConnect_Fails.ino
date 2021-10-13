@@ -119,8 +119,8 @@ void WiFiStationSetup(String rec_ssid, String rec_password)
     Serial.println("");  Serial.print("WiFi connected to: "); Serial.println(rec_ssid);
     Serial.print("IP address: ");  Serial.println(WiFi.localIP());
     preferences.putBool("is_setup_done", is_setup_done);
-    preferences.putString("rec_ssid", ssid);
-    preferences.putString("rec_password", password);
+    preferences.putString("rec_ssid", rec_ssid);
+    preferences.putString("rec_password", rec_password);
   }
 }
 
