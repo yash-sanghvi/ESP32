@@ -8,6 +8,7 @@ This repo contains a series of example codes related to ESP32, almost all of whi
 | Example | Tutorial |
 | :---: | :---:  |
 | AnalogReadWithLDR | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/interfacing_esp32_with_analog_sensors.htm) |
+| Button_Interrupts_ESP32 | [Click Here](https://iotespresso.com/button-external-interrupts-with-esp32/) |
 | Captive_Portal | [Click Here](https://iotespresso.com/create-captive-portal-using-esp32/) |
 | Captive_Portal_LittleFS_HTML | [Click Here](https://iotespresso.com/esp32-captive-portal-fetching-html-using-littlefs/) |
 | Captive_Portal_SPIFFS_HTML | [Click Here](https://iotespresso.com/esp32-captive-portal-fetching-html-from-spiffs/) |
@@ -22,6 +23,7 @@ This repo contains a series of example codes related to ESP32, almost all of whi
 | OLED_Counter | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/interfacing_oled_display_with_esp32.htm) |
 | Open_CaptivePortal_When_WiFiConnect_Fails | [Click Here](https://iotespresso.com/esp32-launch-captive-portal-only-if-wifi-connect-fails/) |
 | Timer_Interrupts_ESP32 | [Click Here](https://iotespresso.com/timer-interrupts-with-esp32/) |
+| WatchDogTimer | [Click Here](https://iotespresso.com/create-custom-watchdog-timer-in-esp32/) |
 
 # Other useful ESP32 Tutorials
 - [Core Debug Level in ESP32](https://iotespresso.com/core-debug-level-in-esp32/)
