@@ -7,6 +7,7 @@ This repo contains a series of example codes related to ESP32, almost all of whi
 
 | Example | Tutorial |
 | :---: | :---:  |
+| AWS_IOT | [Click Here](https://iotespresso.com/how-to-connect-esp32-to-aws-iot-core/) |
 | AnalogReadWithLDR | [Click Here](https://www.tutorialspoint.com/esp32_for_iot/interfacing_esp32_with_analog_sensors.htm) |
 | Button_Interrupts_ESP32 | [Click Here](https://iotespresso.com/button-external-interrupts-with-esp32/) |
 | Captive_Portal | [Click Here](https://iotespresso.com/create-captive-portal-using-esp32/) |
