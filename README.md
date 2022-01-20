@@ -25,6 +25,7 @@ This repo contains a series of example codes related to ESP32, almost all of whi
 | Open_CaptivePortal_When_WiFiConnect_Fails | [Click Here](https://iotespresso.com/esp32-launch-captive-portal-only-if-wifi-connect-fails/) |
 | Timer_Interrupts_ESP32 | [Click Here](https://iotespresso.com/timer-interrupts-with-esp32/) |
 | WatchDogTimer | [Click Here](https://iotespresso.com/create-custom-watchdog-timer-in-esp32/) |
+| mDNS_ServiceProvider | [Click Here](https://iotespresso.com/how-to-discover-esp32-service-over-mdns/) |
 
 # Other useful ESP32 Tutorials
 - [Core Debug Level in ESP32](https://iotespresso.com/core-debug-level-in-esp32/)
